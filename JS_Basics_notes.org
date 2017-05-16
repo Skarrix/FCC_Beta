@@ -98,3 +98,41 @@ Multi-dimensional Array: aka nested array, ex. [["bulls", 23], "Cows", 45]]
       console.log(threeArr); // returns [1,4]
 .shift(): removes first element from array
 .unshift(): adds elements to front of array. works like .push() only for front instead of back.
+
+Functions: reusable parts.
+  Ex.
+    function functionName() {
+      console.log("Hello World");
+    }
+  'Invoked' (called) with
+    functionName();
+
+Parameters: placeholders for values to be input into function
+  Ex.
+    function testFun(param1, param2) {
+      console.log(param1, param2);
+    }
+    testFun("Hello", "world")
+   Where
+    param1 assigned "Hello"
+    param3 assigned "World"
+argument: values that are 'passed' into function. ex. "Hello" above
+
+Scope: visibility of variables
+  - If defined outside function block: Global Scope. aka seen anywhhere in JS code
+    - variables used without 'var' keyword are auto-created in global scope. can cause inintended consequences, don't use. always declare.
+  - if declared within function, incl function parameters: local scope. only visible within that function
+    - Possible to have both local and global var with same name. local var will then take precedence over global
+
+Return: 'return' statement to send value back out of a function. (argument passes value to function)
+  Ex.
+    function plusThree(num) {
+      return num + 3;
+    }
+    var answer = plusThree(5);   //8
+   Where
+    plusThree takes 'argument' for 'num' parameter and returns value equal to 'num + 3'
+  return value can be assigned to variable with assignment operator (=)
+    Ex. ourSum = sum(5, 12);
+   Where
+    'sum' function is called which returns value of 17 and assigns to ourSum var
