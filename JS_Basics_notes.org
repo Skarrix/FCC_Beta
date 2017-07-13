@@ -136,3 +136,28 @@ Return: 'return' statement to send value back out of a function. (argument passe
     Ex. ourSum = sum(5, 12);
    Where
     'sum' function is called which returns value of 17 and assigns to ourSum var
+
+Queue: abstract 'Data Structure' where items are kept in order.
+  - new items added to back of queue old items taken off of front of queue.
+
+Boolean: data type
+  - one of 2 values, True/False
+
+If statement:
+  - makes decisions in code
+  - keyord 'if' tells JS to execute code in {} under certain conditions, defined in ().
+  - These conditions = boolean, can only be true/False
+  - When condition true, program executes statement inside {}. when condition false, {} will not execute
+
+Comparison Operators
+  - Boolean, returns true/False
+  - strict variant compares data type and value, loose variants convert one data type to the other to execute comparison
+- equality operator: == (not the same as =, assignment)
+  - Comparing different data types: must convert one to the other
+- strict equals: === (tests both data type and value)
+- inequality operator: != (not equal, returns false where equality would return true)
+- strict inequality: !== (opposite of strict equals)
+- greater than: > (also converts data types while comparing)
+- greater or equal: >=
+- less than: <
+- less or equal: <=
